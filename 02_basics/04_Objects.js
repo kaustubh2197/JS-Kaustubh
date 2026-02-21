@@ -1,43 +1,57 @@
-//const tinderusr = {} //literal
+// //const tinderusr = {} //literal
 
-//const tinderuser = new Object()  //singelton object
+// //const tinderuser = new Object()  //singelton object
 
-const tinderuser = {}
-tinderuser.id = "123abc"
-tinderuser.name = "sam"
-tinderuser.isLoggedIn = false
+// const tinderuser = {}
+// tinderuser.id = "123abc"
+// tinderuser.name = "sam"
+// tinderuser.isLoggedIn = false
 
 
-const regularUser = {
-    email : "some@gmail.com",
-    fullname : {
-        userfullname : {
-            firstname : "Kaustubh",
-            lastname : "Kolhe"
-        }
-    }
+// const regularUser = {
+//     email : "some@gmail.com",
+//     fullname : {
+//         userfullname : {
+//             firstname : "Kaustubh",
+//             lastname : "Kolhe"
+//         }
+//     }
+// }
+
+// console.log(regularUser.fullname.userfullname)
+
+// console.log(tinderuser)
+
+// console.log("***********************************************************")
+
+// const obj1 = {
+//     1 : "a",
+//     2 : "b"
+// }
+
+// const obj2 = {
+//     3 : "a",
+//     4 : "b"
+// }
+
+// const obj3 = Object.assign({},obj1,obj2)
+// console.log(obj3)
+
+// console.log("***********************************************************")
+
+// const obj4 = {...obj1, ...obj2}
+// console.log(obj4)
+
+// Object destructuring
+
+const course = {
+    coursename : "js in hindi",
+    price : "999",
+    courseInstructor : "Kaustubh"
 }
 
-console.log(regularUser.fullname.userfullname)
+const {courseInstructor} = course
+console.log(courseInstructor)
 
-console.log(tinderuser)
-
-console.log("***********************************************************")
-
-const obj1 = {
-    1 : "a",
-    2 : "b"
-}
-
-const obj2 = {
-    3 : "a",
-    4 : "b"
-}
-
-const obj3 = Object.assign({},obj1,obj2)
-console.log(obj3)
-
-console.log("***********************************************************")
-
-const obj4 = {...obj1, ...obj2}
-console.log(obj4)
+const {coursename : name} = course
+console.log(name)
